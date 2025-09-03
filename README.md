@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
   # Design Indian-Themed UI
 
@@ -9,3 +10,7 @@
 
   Run `npm run dev` to start the development server.
   
+=======
+# SIH-
+Blockchain-Based Supply Chain Transparency for Agricultural Produce
+>>>>>>> e5eee8e05d40cc66a11678d8ef2c67053208dbb9
