@@ -321,6 +321,13 @@ Your blockchain-integrated supply chain system is now complete and ready for use
 
 ---
 
+
+## 📞 **Flow Chart**
+
+![WhatsApp Image 2025-09-06 at 10 23 20_7b053302](https://github.com/user-attachments/assets/e9fc96c3-0c60-412c-b1e7-fa3742657903)
+
+---
+
 ## 📞 **Support**
 
 For technical issues or questions about the blockchain integration:
