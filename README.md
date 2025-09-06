@@ -1,26 +1,66 @@
-# 🌾 AgriChain - Blockchain-Integrated Supply Chain System
+# 🌾 AgroChain: Blockchain-Based Supply Chain Transparency for Agricultural Produce
 
-AgriChain is a **blockchain-powered agricultural supply chain system** that ensures **farm-to-table transparency** using smart contracts, QR codes, and role-based dashboards.  
-
----
-
-## 🏗️ System Architecture
-
-### Components
-1. **Smart Contract** (`AgriChain.sol`) - Deployed on blockchain  
-2. **Frontend UI** - React application with role-based dashboards  
-3. **Blockchain Service** - Web3 integration layer  
-4. **QR Code System** - Product tracking and verification  
-
-### User Roles
-- 🌱 **Farmers** → Register crops on blockchain, generate QR codes  
-- 🚛 **Distributors** → Update transport info, add handling costs  
-- 🏪 **Retailers** → Add retail margins, store details  
-- 👥 **Customers** → Scan QR codes, view complete transparency  
+AgroChain is a **blockchain-powered platform** designed to ensure **transparency, traceability, and trust** in the agricultural supply chain.  
+It allows farmers, distributors, retailers, and customers to interact seamlessly while recording every step on a **tamper-proof blockchain**.
 
 ---
 
-## 📊 Supply Chain Overview
+## 🚀 Features
+
+- 🔗 **Blockchain Transparency** – Track produce from farm to consumer.  
+- 📱 **QR Code Integration** – Each crop batch gets a scannable QR code.  
+- 👨‍🌾 **Role-Based Access** – Farmer, Distributor, Retailer, and Customer workflows.  
+- 📊 **Data Insights** – Firebase integration for storing activity logs.  
+- 🎨 **Responsive UI** – Clean and modern design with Indian theme support.  
+- ✅ **End-to-End Traceability** – Every step is verifiable on-chain.  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: HTML, CSS, JavaScript  
+- **Blockchain**: Hardhat (Ethereum)  
+- **Backend/Database**: Firebase  
+- **Smart Contracts**: Solidity  
+- **Others**: QR Code Generator, PowerShell setup launcher  
+
+---
+
+## 📂 Project Structure
+
+```bash
+AgroChain/
+│── contracts/           # Solidity Smart Contracts
+│── scripts/             # Deployment scripts
+│── frontend/            # UI code (HTML, CSS, JS)
+│── firebase/            # Firebase integration files
+│── AgroChain-Launcher.ps1  # Auto setup script
+│── README.md            # Documentation
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/your-username/AgroChain.git
+cd AgroChain
+```
+
+### 2️⃣ Run Setup Script
+For Windows:
+```powershell
+AgroChain-Launcher.ps1
+```
+
+This will:
+- Check & install prerequisites  
+- Start Hardhat blockchain  
+- Deploy smart contracts  
+- Initialize Firebase + frontend  
+
+---
 
 ## 📞 Detailed Workflow
 
@@ -73,175 +113,37 @@ flowchart LR
     style R3 fill:#81c784,stroke:#1b5e20,stroke-width:2px
     style C2 fill:#64b5f6,stroke:#0d47a1,stroke-width:2px
     style S3 fill:#4db6ac,stroke:#004d40,stroke-width:2px
-
----
-
-## 🚀 Quick Start Guide
-
-### 1. Prerequisites
-- Node.js installed  
-- MetaMask browser extension  
-- Local blockchain running (Hardhat)  
-
-### 2. Smart Contract Deployment
-```bash
-cd Blockchain/seed-to-shelf-flow-main/smart-contracts
-npm install
-npx hardhat node
-npx hardhat run deploy.js --network localhost
 ```
 
-### 3. Frontend Setup
-```bash
-cd frontendNbackend
-npm install
-npm run dev
-```
+---
 
-### 4. MetaMask Configuration
-- **Network Name:** Hardhat Local  
-- **RPC URL:** http://127.0.0.1:8545  
-- **Chain ID:** 31337  
-- **Currency Symbol:** ETH  
+## 📸 Screenshots (Optional)
+_Add screenshots of UI, blockchain explorer, and QR code scans here._
 
 ---
 
-## 📱 How to Use
+## 🤝 Contributing
 
-### 🌱 Farmer
-1. Login & connect MetaMask  
-2. Add crop details → Register on blockchain  
-3. Generate QR code → Attach to product  
-
-### 🚛 Distributor
-1. Scan QR code from farmer  
-2. Add transport details & handling costs  
-3. Update blockchain  
-
-### 🏪 Retailer
-1. Scan distributor’s QR code  
-2. Add store details & margin  
-3. Update blockchain  
-
-### 👥 Customer
-1. Scan QR code on product  
-2. View complete history & verify authenticity  
+1. Fork the project  
+2. Create your feature branch (`git checkout -b feature-name`)  
+3. Commit changes (`git commit -m 'Add feature'`)  
+4. Push to branch (`git push origin feature-name`)  
+5. Open a Pull Request  
 
 ---
 
-## 🔧 Key Features
-- ✅ Blockchain integration (Hardhat + Web3 + MetaMask)  
-- ✅ Immutable product history  
-- ✅ Role-based dashboards  
-- ✅ QR code generation & scanning  
-- ✅ Real-time blockchain updates  
+## 📜 License
+
+This project is **open-source** under the MIT License.  
 
 ---
 
-## 🔒 Security & Trust
-- **Immutable Blockchain Records** – Cannot be altered or deleted  
-- **Role-Based Access** – Farmers, distributors, retailers, customers  
-- **Wallet Authentication** – MetaMask login  
-- **Smart Contract Validation** – Ensures correct workflow order  
+## ✨ Authors
+
+- 👨‍💻 Sanskar + Team  
 
 ---
 
-## 🌟 Benefits
+## ⭐ Support
 
-### For Farmers
-- Proof of authenticity  
-- Better market access  
-- Direct connection to consumers  
-
-### For Distributors
-- Transparent handling costs  
-- Reduced disputes  
-- Improved tracking  
-
-### For Retailers
-- Consumer trust  
-- Premium pricing for verified products  
-- Reduced liability  
-
-### For Customers
-- Complete transparency  
-- Instant authenticity verification  
-- Farm-to-table journey  
-
----
-
-## 🛠️ Technical Implementation
-
-### Smart Contract Functions
-```solidity
-// Farmer functions
-registerProduct() - Register new crop
-getProduct() - Get product details
-
-// Distributor functions
-updateAsDistributor() - Add transport info
-getProductHistory() - Get transaction history
-
-// Retailer functions
-updateAsRetailer() - Add retail info
-
-// Customer functions
-verifyProduct() - Verify authenticity
-```
-
-### Frontend Services
-- `blockchainService.ts` → Web3 integration  
-- `qrCodeService.ts` → QR code generation & scanning  
-- Role-based dashboards  
-
-### Key Dependencies
-- `ethers` – Ethereum interaction  
-- `qrcode` – QR code generation  
-- `html5-qrcode` – QR scanning  
-- `sonner` – Notifications  
-
----
-
-## 🔍 Troubleshooting
-
-### Common Issues
-1. **MetaMask not connecting** → Check network is Hardhat Local (31337)  
-2. **Transaction failing** → Ensure correct status & enough ETH  
-3. **QR not scanning** → Use manual Product ID entry  
-
-### Contract Info
-- Address: `0x0165878A594ca255338adfa4d48449f69242Eb8F`  
-- Network: Localhost (Hardhat)  
-- Chain ID: `31337`  
-
----
-
-## 🎉 Success! Your System is Ready
-
-AgriChain is now live with:  
-✅ **Complete Transparency** – Farm-to-table traceability  
-✅ **Immutable Records** – Blockchain storage  
-✅ **QR Code Integration** – Easy scanning & verification  
-✅ **Role-based Access** – Secure user management  
-✅ **Real-time Updates** – Blockchain synchronization  
-
----
-
-## 📸 Future Enhancements
-- Add **demo screenshots** of dashboards  
-- Deploy on **testnet (Goerli / Sepolia)**  
-- Mobile app integration for QR scanning  
-
----
-
-## 📞 Support
-
-For technical issues:  
-- Check MetaMask console logs  
-- Ensure Hardhat node is running  
-- Verify correct contract deployment  
-- Retry with fresh wallet accounts  
-
----
-
-**Happy Farming with Blockchain Transparency! 🌾🚛🏪👥**
+If you find this project useful, **leave a star ⭐ on GitHub** to support future development!  
