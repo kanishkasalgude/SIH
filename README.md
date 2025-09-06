@@ -22,20 +22,10 @@ AgriChain is a **blockchain-powered agricultural supply chain system** that ensu
 
 ## 📊 Supply Chain Overview
 
-```mermaid
-flowchart LR
-    Farmer[🌱 Farmer] --> Distributor[🚛 Distributor]
-    Distributor --> Retailer[🏪 Retailer]
-    Retailer --> Customer[👥 Customer]
-    Customer -->|Scan QR| Product[📦 Blockchain Product History]
-```
-
----
-
 ## 📞 Detailed Workflow
 
 ```mermaid
-    flowchart LR
+flowchart LR
     %% System Setup
     A[🚀 AgroChain-Launcher.ps1] --> B[🔧 Check Prerequisites]
     B --> C[📦 Install Dependencies]
@@ -83,6 +73,7 @@ flowchart LR
     style R3 fill:#81c784,stroke:#1b5e20,stroke-width:2px
     style C2 fill:#64b5f6,stroke:#0d47a1,stroke-width:2px
     style S3 fill:#4db6ac,stroke:#004d40,stroke-width:2px
+
 ---
 
 ## 🚀 Quick Start Guide
