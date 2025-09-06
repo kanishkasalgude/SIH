@@ -324,7 +324,52 @@ Your blockchain-integrated supply chain system is now complete and ready for use
 
 ## 📞 **Flow Chart**
 
-![WhatsApp Image 2025-09-06 at 10 23 20_7b053302](https://github.com/user-attachments/assets/e9fc96c3-0c60-412c-b1e7-fa3742657903)
+flowchart TD
+    %% System Setup
+    A[🚀 AgroChain-Launcher.ps1] --> B[🔧 Check Prerequisites]
+    B --> C[📦 Install Dependencies]
+    C --> D[⛓️ Start Hardhat Blockchain]
+    D --> E[📝 Deploy Smart Contract]
+    E --> F[🔥 Init Firebase + Frontend]
+    F --> G[✅ System Ready]
+
+    %% Farmer Stage
+    G --> F1[👨‍🌾 Farmer Login]
+    F1 --> F2[📝 Add Crop Details]
+    F2 --> F3[💾 Save Draft + Connect Wallet]
+    F3 --> F4[⛓️ Register Crop on Blockchain]
+    F4 --> F5[📱 Generate & Attach QR Code]
+
+    %% Distributor Stage
+    F5 --> D1[🚛 Distributor Scans QR]
+    D1 --> D2[📝 Add Transport + Costs]
+    D2 --> D3[⛓️ Update Blockchain]
+    D3 --> D4[🚚 Product in Transit]
+
+    %% Retailer Stage
+    D4 --> R1[🏪 Retailer Scans QR]
+    R1 --> R2[📝 Add Store Details + Margin]
+    R2 --> R3[⛓️ Update Blockchain]
+    R3 --> R4[🛒 Product Available]
+
+    %% Customer Stage
+    R4 --> C1[👥 Customer Scans QR]
+    C1 --> C2[🔍 View History + Price Breakdown]
+    C2 --> C3[✅ Verify Authenticity]
+    C3 --> C4[🛍️ Purchase Decision]
+
+    %% Success & Monitoring
+    C4 --> S1[📊 Data to Firebase + Blockchain]
+    S1 --> S2[📈 Metrics & Transparency]
+    S2 --> S3[🎯 Trust & System Success]
+
+    style A fill:#fff3e0
+    style F4 fill:#e8f5e8
+    style D3 fill:#e8f5e8
+    style R3 fill:#e8f5e8
+    style C2 fill:#e3f2fd
+    style S3 fill:#c8e6c9
+
 
 ---
 
