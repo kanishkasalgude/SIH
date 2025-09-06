@@ -74,12 +74,12 @@ flowchart TD
     S1 --> S2[📈 Metrics & Transparency]
     S2 --> S3[🎯 Trust & System Success]
 
-    style A fill:#fff3e0
-    style F4 fill:#e8f5e8
-    style D3 fill:#e8f5e8
-    style R3 fill:#e8f5e8
-    style C2 fill:#e3f2fd
-    style S3 fill:#c8e6c9
+    style A fill:#ffcc80,stroke:#e65100,stroke-width:2px
+    style F4 fill:#81c784,stroke:#1b5e20,stroke-width:2px
+    style D3 fill:#81c784,stroke:#1b5e20,stroke-width:2px
+    style R3 fill:#81c784,stroke:#1b5e20,stroke-width:2px
+    style C2 fill:#64b5f6,stroke:#0d47a1,stroke-width:2px
+    style S3 fill:#4db6ac,stroke:#004d40,stroke-width:2px
 ```
 
 ---
