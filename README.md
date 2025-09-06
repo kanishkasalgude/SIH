@@ -117,8 +117,7 @@ flowchart LR
 
 ---
 
-## 📸 Screenshots (Optional)
-_Add screenshots of UI, blockchain explorer, and QR code scans here._
+
 
 ---
 
