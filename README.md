@@ -35,7 +35,6 @@ flowchart LR
 ## 📞 Detailed Workflow
 
 ```mermaid
-flowchart TD
     flowchart LR
     %% System Setup
     A[🚀 AgroChain-Launcher.ps1] --> B[🔧 Check Prerequisites]
